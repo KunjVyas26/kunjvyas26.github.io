@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+    <!-- Meta Tags -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="description"
+        content="This is a profile of a UX Designer who loves minimal designs. Keep it balanced! He is from India and wants to give the best out for a worthy impact. " />
+    <title>Payment Method Selection | Kunj Vyas - Product/ UX Designer, Researcher and Developer</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.jpeg" type="image/x-icon">
+
+    <!-- Mobile Specifics -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Responsive -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,latin-ext,cyrillic'
+        rel='stylesheet' type='text/css'>
+
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="#">
+
+    <link rel="apple-touch-icon" href="#">
+    <link rel="apple-touch-icon" sizes="114x114" href="#">
+    <link rel="apple-touch-icon" sizes="72x72" href="#">
+    <link rel="apple-touch-icon" sizes="144x144" href="#">
+
+    <!-- Modernizr -->
+    <script src="assets/js/modernizr.js"></script>
+
+    <!-- bottom to top button -->
+<title>Back to Top Button</title>
+<style>
+    /* Style for the back-to-top button */
+    #backToTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        background-color: transparent;
+        color: black;
+        padding: 10px 20px;
+        border: 1px solid #007BFF;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+
+
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="span2">
+                    <div id="logo">
+                        <a href="index.html" title="KUNJ">KUNJ</a>
+                    </div>
+                </div>
+                <div class="span10">
+                    <nav id="menu">
+                        <ul id="menu-nav">
+                            <li><a href="about.html">about</a></li>
+                            <li><a href="photography.html">photography</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+    <section id="single-team" class="container">
+        <div class="row">
+            <div class="top-margin">
+                <h1 class="green">Payment Method Selection</h1>
+                <h6>Research On Streamlined Payment In E-Commerce Applications</h6>
+            </div>
+        </div>
+    </section>
+
+    <section id="single-team" class="container">
+        <div class="row">
+          <div class="span12">
+            <div class="work team-img">
+              <img src="assets/img/prj_payment/cover.png" alt="About">
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <br />
+
+    <section id="single-team" class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="work team-img laptop">
+                    <img src="assets/img/prj_payment/1.png" >
+                    <img src="assets/img/prj_payment/2.png" >
+                    <img src="assets/img/prj_payment/3.png" >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Project goTo Button -->
+    <div class="button-container">
+        <div class="button-wrapper">
+            <button id="goToPetpuja">Previous: Petpuja</button>
+        </div>
+
+        <div class="button-wrapper">
+            <button id="goToAfterglow">Next: Afterglow</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("goToPetpuja").addEventListener("click", function() {
+            window.location.href = "petpuja.html";
+        });
+
+        document.getElementById("goToAfterglow").addEventListener("click", function() {
+            window.location.href = "afterglow.html";
+        });
+    </script>
+
+    <!-- Start Footer -->
+    <footer class="footer-widgets">
+        <div class="container">
+            <div class="row">
+                <div class="span4 widget">
+                    <div class="about-widget">
+                        <h7><a href="mailto:kunjvyas1998.music@gmail.com?subject=Let's connect!" target="_blank">kunjvyas1998.music@gmail.com</a></h7>
+                </div>
+            </div>
+             <div class="span8 widget">
+            	<div class="twitter-widget">
+                <h7><a href="https://www.linkedin.com/in/kunj-vyas-6886a3196/" target="_blank">linkedin</a> &nbsp; • &nbsp; <a href="https://www.instagram.com/_kunjvyas98/?hl=en" target="_blank">instagram</a> &nbsp; • &nbsp; <a href="https://www.github.com/KunjVyas26/" target="_blank">github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- bottom to top button -->
+<button id="backToTopBtn" onclick="backToTop()">Back to Top</button>
+
+<script>
+    // Function to scroll back to the top of the page
+    function backToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
+    // Show the back-to-top button when scrolling down
+    window.onscroll = function() {
+        var backToTopBtn = document.getElementById("backToTopBtn");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopBtn.style.display = "block";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
+    };
+</script>
+
+
+</body>
+
+</html>
