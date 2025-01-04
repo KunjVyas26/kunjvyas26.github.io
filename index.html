@@ -1,179 +1,552 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 
 <head>
-
-<!-- Meta Tags -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-<meta name="description" content="This is a profile of a UX Designer who loves minimal designs. Keep it balanced! He is from India and wants to give the best out for a worthy impact."/>
-<title>Kunj Vyas - UI/UX Designer, Researcher and Developer</title>   
-<link rel="shortcut icon" href="./assets/img/favicon.jpeg" type="image/x-icon">  
-
-<!-- Mobile Specifics -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="HandheldFriendly" content="true"/>
-<meta name="MobileOptimized" content="320"/>   
-
-<!-- Bootstrap -->
-<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Main Style -->
-<link href="assets/css/main.css" rel="stylesheet">
-
-<!-- Responsive -->
-<link href="assets/css/responsive.css" rel="stylesheet">
-
-<!-- Google Font -->
-<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
-
-<!-- Fav Icon -->
-<link rel="shortcut icon" href="#">
-
-<link rel="apple-touch-icon" href="#">
-<link rel="apple-touch-icon" sizes="114x114" href="#">
-<link rel="apple-touch-icon" sizes="72x72" href="#">
-<link rel="apple-touch-icon" sizes="144x144" href="#">
-
-<!-- Modernizr -->
-<script src="assets/js/modernizr.js"></script>
-
-<!-- bottom to top button -->
-<title>Back to Top Button</title>
-    <style>
-        /* Style for the back-to-top button */
-        #backToTopBtn {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 30px;
-            background-color: transparent;
-            color: black;
-            padding: 10px 20px;
-            border: 1px solid #007BFF;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-    </style>
-
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords"
+    content="Kunj Vyas, portfolio, Kunj, UI/UX Designer, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+  <meta name="description" content="Welcome to Kunj's Portfolio. UI/UX/Product Designer, Developer and Researcher" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Favicon -->
+  <link id='favicon' rel="shortcut icon" href="./assets/images/hero.png" type="image/x-png">
+  <title>Portfolio | Kunj Vyas</title>
 </head>
 
+<body oncontextmenu="return false">
 
-<body>
+  <!-- pre loader -->
+  <!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
 
-<!-- Header -->
-<header>
-	<div class="container">
-    	<div class="row">
-        	<div class="span2">
-            	<div id="logo">
-        			<a href="index.html" title="KUNJ">KUNJ</a>
-        		</div>
-            </div>
-            <div class="span10">
-        		<nav id="menu">
-                    <ul id="menu-nav">
-                        <li><a href="about.html">about</a></li>
-                        <li><a href="photography.html">photography</a></li>
-                        <li><a href="contact.html">contact</a></li>
-                    </ul>
-                </nav>
-        	</div>
-        </div>
+  <!-- navbar starts -->
+  <header>
+    <a href="/" class="logo"><i class="fab fa-node-js"></i> Kunj</a>
+
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- navbar ends -->
+
+
+  <!-- hero section starts -->
+  <section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="content">
+      <h2>Hi There,<br /> I'm <span> Kunj </span></h2>
+      <p>i am into <span class="typing-text"></span></p>
+      <a href="#about" class="btn"><span>About Me</span>
+        <i class="fas fa-arrow-circle-down"></i>
+      </a>
+      <div class="socials">
+        <ul class="social-icons">
+          <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/kunjvyas26/"
+              target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a class="github" aria-label="GitHub" href="https://github.com/kunjvyas26" target="_blank"><i
+                class="fab fa-github"></i></a></li>
+          <li><a class="envelope" aria-label="envelope" href="mailto:kunjvyas26.@gmail.com" target="_blank"><i
+                class="fas fa-envelope"></i></a></li>
+        </ul>
+      </div>
     </div>
-</header>
-<!-- End Header -->
-
-<!-- Start Intro Box -->
-<section id="intro-box" class="margin-0">
-	<div class="container">
-        <div class="row">
-            <div class="span12">
-                <div id="textContainer"></div>
-                <h2 style="text-align:center;"><b>Hi, I am Kunj Vyas. <br>Product/UX Designer! 🧑🏻‍🎨</b></h2>
-                <h3 class="center" style="font-size:1.5em;">Experienced Product/UX Designer with a proven track record of driving user-centric design decisions with the past experience of Data Engineering. Proficient in simplifying complex processes, collaborating cross-functionally, and delivering intuitive user experiences in agile environments.</h3>
-
-            </div> 
-        </div>
+    <div class="image">
+      <img draggable="false" class="tilt" src="./assets/images/hero.avif" alt="">
     </div>
-</section>
-<!-- End Intro Box -->
+  </section>
+  <!-- hero section ends -->
 
-<!-- Start Section Portfolio Projects -->
-<section id="portfolio" class="container">
+  <!-- about section starts -->
+  <section class="about" id="about">
+    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+
     <div class="row">
-        <div id="portfolio-projects">
-            <ul id="projects">
-                <li class="item-project span12">
-                    <a href="spatialbanking.html"><img src="assets/img/prj_spatialbanking/cover.png" onmouseover="this.src='./assets/img/prj_spatialbanking/cover.png'" onmouseout="this.src='./assets/img/prj_spatialbanking/cover.png'" alt=""></a>
-                </li>
-                <li class="item-project span12">
-                    <a href="petpuja.html"><img src="assets/img/prj_petpuja/cover.webp" onmouseover="this.src='./assets/img/prj_petpuja/coverhover.png'" onmouseout="this.src='./assets/img/prj_petpuja/cover.webp'" alt=""></a>
-                </li>
-                <li class="item-project span12">
-                    <a href="payment.html"><img src="assets/img/prj_payment/cover.png" onmouseover="this.src='./assets/img/prj_payment/coverhover.png'" onmouseout="this.src='./assets/img/prj_payment/cover.png'" alt=""></a>
-                </li>
-                <!-- <li class="item-project span12">
-                    <a href="Mooddl 2.html"><img src="assets/img/prj_mooddl/cover.webp" onmouseover="this.src='./assets/img/prj_mooddl/coverhover.png'" onmouseout="this.src='./assets/img/prj_mooddl/cover.webp'" alt=""></a>
-                </li> -->
-                <li class="item-project span12">
-                    <a href="afterglow.html"><img src="assets/img/prj_afterglow/cover.webp" onmouseover="this.src='./assets/img/prj_afterglow/coverhover.png'" onmouseout="this.src='./assets/img/prj_afterglow/cover.webp'" alt=""></a>
-                </li>
-                <li class="item-project span12">
-                    <a href="mooddl.html"><img src="assets/img/prj_mooddl/cover.webp" onmouseover="this.src='./assets/img/prj_mooddl/coverhover.png'" onmouseout="this.src='./assets/img/prj_mooddl/cover.webp'" alt=""></a>
-                </li>
-                <!-- <li class="item-project span12">
-                    <a href="craigslist.html"><img src="assets/img/prj_craigslist/cover.webp" onmouseover="this.src='./assets/img/prj_craigslist/coverhover.webp'" onmouseout="this.src='./assets/img/prj_craigslist/cover.webp'" alt=""></a>
-                </li> -->
-            </ul>
+
+      <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/profile.jpg" alt="">
+        <img draggable="false" class="tilt" src="./assets/images/profile2.jpg" alt="">
+      </div>
+      <div class="content">
+        <h3>I'm Kunj</h3>
+        <span class="tag">Data-Driven, Detail-Oriented, Problem Solver</span>
+        <p>4+ years of experience</p>
+        <p>
+          <b>Proficient in simplifying complex
+            processes, collaborating cross-functionally, and delivering intuitive user experiences in agile
+            environments</b>.
+        </p>
+
+        <p>
+          My experience as a designer in <b>Accenture's</b> data engineering team equips me to <b>leverage data analysis
+            for
+            quantitative UX research, enabling insightful, user-centric, and impactful designs</b>.</p>
+
+        <p>I’m passionate about <b>continuous learning</b>, connecting with diverse people, and creating simple
+          solutions that enhance everyday experiences. </p>
+        <p><b>Thoughtful design fascinates me for its transformative potential</b>.
+        </p>
+        <p>With a strong curiosity for understanding <b>why
+            and how</b> user interact with products, I strive to refine and elevate those experiences, making them
+          memorable.</p>
+
+        <p>Outside of work, </p>
+
+        <p>- I am a professional singer and a musician.</p>
+        <p>- I enjoy playing outdoor sports everyday.</p>
+        <p>- To become a healthier version of myself, I aim for consistency in routines and more home-cooked meals.
+        </p>
+
+        <div class="resumebtn">
+          <a href="assets/files/ProductDesignerResume - KunjVyas.pdf" target="_blank" class="btn"><span>Resume</span>
+            <i class="fas fa-chevron-right"></i>
+          </a>
         </div>
-    </div>
-</section>
-<!-- End Section Portfolio Projects -->
 
-<!-- Start Footer -->
-<footer class="footer-widgets">
-	<div class="container">
-    	<div class="row">
-         	<div class="span4 widget">
-            	<div class="about-widget">
-                    <h7><a href="mailto:kunjvyas1998.music@gmail.com?subject=Let's connect!" target="_blank">kunjvyas1998.music@gmail.com</a></h7>
-                </div>
-            </div>
-             <div class="span8 widget">
-            	<div class="twitter-widget">
-                    <h7><a href="https://www.linkedin.com/in/kunj-vyas-6886a3196/" target="_blank">linkedin</a> &nbsp; • &nbsp; <a href="https://www.instagram.com/_kunjvyas98/?hl=en" target="_blank">instagram</a> &nbsp; • &nbsp; <a href="https://www.github.com/KunjVyas26/" target="_blank">github</a>    
-                </div>	
-            </div>
+      </div>
+    </div>
+  </section>
+  <!-- about section ends -->
+
+  <!-- skills section starts -->
+  <section class="skills" id="skills">
+
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+
+    <div class="container">
+      <div class="row" id="skillsContainer">
+
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/color/48/000000/figma.png" />
+            <span>Figma</span>
+          </div>
         </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/?size=48&id=4VVL78edhbW9&format=png&color=000000" />
+            <span>XD</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/?size=48&id=51lMuEpYaQ8k&format=png&color=000000" />
+            <span>InDesign</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/?size=48&id=13631&format=png&color=000000" />
+            <span>Illustrator</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/?size=48&id=13677&format=png&color=000000" />
+            <span>Photoshop</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/?size=48&id=MU45yL8cD9cF&format=png&color=000000" />
+            <span>Miro</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/?size=48&id=KcSWBYt2HYiq&format=png&color=000000" />
+            <span>Cinema 4D</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/?size=48&id=37iEIiYKRoDs&format=png&color=000000" />
+            <span>Sketch</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/?size=48&id=MdLjthXUdZMp&format=png&color=000000" />
+            <span>MotionDesign</span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <div class="info">
+            <img src="https://img.icons8.com/?size=48&id=63777&format=png&color=000000" />
+            <span>GitHub</span>
+          </div>
+        </div>
+
+        
+      </div>
     </div>
-</footer>
-<!-- End Footer -->
+  </section>
+  <!-- skills section ends -->
 
-<!-- bottom to top button -->
-<button id="backToTopBtn" onclick="backToTop()">Back to Top</button>
 
-    <script>
-        // Function to scroll back to the top of the page
-        function backToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        }
 
-        // Show the back-to-top button when scrolling down
-        window.onscroll = function() {
-            var backToTopBtn = document.getElementById("backToTopBtn");
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                backToTopBtn.style.display = "block";
-            } else {
-                backToTopBtn.style.display = "none";
-            }
-        };
-    </script>
+  <!-- education section starts -->
+  <section class="education" id="education">
+
+    <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+
+    <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+
+    <div class="box-container">
+
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/educat/asu.svg" alt="">
+        </div>
+        <div class="content">
+          <h3>Master's of Science in Human Computer Interaction</h3>
+          <p>Arizona State University </p>
+          <h4>2022-2024 | Completed</h4>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img draggable="false" src="./assets/images/educat/au.png" alt="">
+        </div>
+        <div class="content">
+          <h3>Bachelor's of Technology in Information and Communication Technology</h3>
+          <p>Ahmedabad University</p>
+          <h4>2016-2020 | Completed</h4>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- education section ends -->
+
+
+  <section class="projects" id="projects">
+
+    <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+
+    <div class="box-container">
+
+      <div class="box">
+        <div class="content">
+          <div class="tag">
+            <h3>BankSphere: AI Powered Spatial Banking</h3>
+          </div>
+          <div class="desc">
+            <p>BankSphere is a spatial banking application designed to revolutionize the way users manage their
+              finances. The primary goal of this platform is to provide an immersive, AI-driven experience that
+              simplifies financial decision-making and enhances user engagement from anywhere. By integrating
+              personalized insights and intuitive account management, FinSmart empowers users to achieve their financial
+              goals with ease.</p>
+            <br>
+            <div class="btns">
+              <a href="spatialbanking.html" class="btn" target="_blank"><i class="fas fa-code"></i> VIEW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="content">
+          <div class="tag">
+            <h3>Petpuja: In-store Food Ordering App</h3>
+          </div>
+          <div class="desc">
+            <p>The goal of this project was to design a streamlined food payment app that allows users to easily order,
+              pick up, or in-table order from any restaurant with clear tracking of the order.</p>
+            <br>
+            <div class="btns">
+              <a href="petpuja.html" class="btn" target="_blank"><i class="fas fa-code"></i> VIEW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="content">
+          <div class="tag">
+            <h3>Research: Payment Method Selection</h3>
+          </div>
+          <div class="desc">
+            <p>A well-designed payment method selection interface is critical in e-commerce, as a cluttered or confusing
+              layout can frustrate users and lead to abandoned carts. Offering limited payment options alienates diverse
+              user groups, reducing conversion rates and customer satisfaction. Regularly updating the primary button
+              for third-party payment methods ensures clarity, trust, and ease of use, enhancing the overall checkout
+              experience.</p>
+            <br>
+            <div class="btns">
+              <a href="payment.html" class="btn" target="_blank"><i class="fas fa-code"></i> VIEW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="content">
+          <div class="tag">
+            <h3>Afterglow: An Interior Design App</h3>
+          </div>
+          <div class="desc">
+            <p>This project was for a client who wanted an ecommerce applications with accessibility features. This app
+              is designed for interior design items, that focuses on how a user, who is color blind, partially blind, or
+              completely blind, uses an e-commerce app.</p>
+            <br>
+            <div class="btns">
+              <a href="afterglow.html" class="btn" target="_blank"><i class="fas fa-code"></i> VIEW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="content">
+          <div class="tag">
+            <h3>MooddL: E-Learning Responsive WebApp</h3>
+          </div>
+          <div class="desc">
+            <p>MooddL is an e-learning platform for online universities and colleges. The main motive for creating was
+              to get a seamless experience of completing assignments and tasks remotely from home.</p>
+            <br>
+            <div class="btns">
+              <a href="mooddl.html" class="btn" target="_blank"><i class="fas fa-code"></i> VIEW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional projects can be added in a similar format -->
+
+    </div>
+
+  </section>
+  <!-- work project section ends -->
+
+
+  <!-- experience section starts -->
+  <section class="experience" id="experience">
+
+    <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
+
+    <div class="timeline">
+
+      <div class="container right">
+        <div class="content">
+          <div class="tag">
+            <h2>FinLit - Innovative Startup Organization</h2>
+          </div>
+          <div class="desc">
+            <h3>Senior UI/UX Designer</h3>
+            <p><b>June 2024 - Present</b></p>
+            <p>- Led the UX design for a Financial Literacy App, managing a team of 5 and delivering over 50 wireframes,
+              prototypes, and final designs across iOS and Android.</p>
+            <p>- Achieved a 30% increase in user engagement by integrating AI-driven personalization and gamification
+              features while ensuring design consistency through scalable systems.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+          <div class="tag">
+            <h2>Arizona State University</h2>
+          </div>
+          <div class="desc">
+            <h3>UX Designer</h3>
+            <p><b>Aug 2023 - June 2024</b></p>
+            <p>- Handeled UX design for a Water Chatbot under the $45M Arizona Water Innovation Initiative, managing
+              research and design efforts impacting over 7 stakeholder groups.</p>
+            <p>- Conducted and analyzed 50+ user testing sessions, driving a 25% improvement in chatbot usability
+              through iterative AI prototype development.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container right">
+        <div class="content">
+          <div class="tag">
+            <h2>SummerDesign</h2>
+          </div>
+          <div class="desc">
+            <h3>UX Designer | Internship</h3>
+            <p><b>May 2023 - December 2023</b></p>
+            <p>- Achieved a 90% processing time reduction and 4x performance improvement through data-driven UX designs
+              for booking platforms.</p>
+            <p>- Designed a user-friendly Attendance Management System with 20+ metrics, integrating video stream
+              analysis and notifications to enhance usability for personalized and office-wide needs..</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container left">
+        <div class="content">
+          <div class="tag">
+            <h2>Accenture</h2>
+          </div>
+          <div class="desc">
+            <h3>UX Designer</h3>
+            <p><b>December 2019 - November 2021</b></p>
+            <p>- Designed a data-driven analytics dashboard using Tableau and HP-OBR, improving visualization and client
+              decision-making efficiency by 30%.</p>
+            <p>- Streamlined e-commerce checkout, reducing time by 30% and boosting satisfaction by 25% and conversion
+              rates by 15%.</p>
+            <p>- Effectively communicated design solutions to cross-functional teams and stakeholders using tools like
+              Figma, Adobe XD, Jira, and ReactJS.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="morebtn">
+    <a href="/experience" class="btn"><span>View All</span>
+      <i class="fas fa-arrow-right"></i>
+  </a>
+  </div> -->
+
+    </div>
+
+  </section>
+  <!-- experience section ends -->
+
+  <!-- contact section starts -->
+  <!-- <section class="contact" id="contact">
+  
+  <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="./assets/images/contact1.png" alt="">
+      </div>
+
+      <div class="contact-details">
+        <div class="field">
+          <i class='fas fa-phone-alt'></i>
+          <span>Phone: <a href="tel:+1234567890">+1234567890</a></span>
+        </div>
+        
+        <div class="field">
+          <i class='fas fa-envelope'></i>
+          <span>Email: <a href="mailto:example@example.com">example@example.com</a></span>
+        </div>
+
+        <div class="field">
+          <i class='fab fa-github'></i>
+          <span>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></span>
+        </div>
+
+        <div class="field">
+          <i class='fab fa-linkedin'></i>
+          <span>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section> -->
+  <!-- contact section ends -->
+
+
+
+  <!-- footer section starts -->
+  <section class="footer" id="contact">
+
+    <div class="box-container">
+
+      <div class="box">
+        <h3>Kunj's Portfolio</h3>
+        <p>Thank you for visiting my personal portfolio website.</p>
+      </div>
+
+      <!-- <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
+          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+      </div> -->
+
+      <div class="box">
+        <h3>contact info</h3>
+        <p> <i class="fas fa-phone"></i> 602-849-5629</p>
+        <p> <i class="fas fa-envelope"></i>kunjvyas26@gmail.com</p>
+        <p> <i class="fas fa-map-marked-alt"></i>Milpitas, California, United States</p>
+        <div class="share">
+
+          <a href="https://www.linkedin.com/in/kunjvyas26/" class="fab fa-linkedin" aria-label="LinkedIn"
+            target="_blank"></a>
+          <a href="https://github.com/KunjVyas26" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+          <a href="mailto:kunjvyas26@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+
+    <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a
+        href="https://www.linkedin.com/in/kunjvyas26/"> Kunj</a></h1>
+
+  </section>
+  <!-- footer section ends -->
+
+
+  <!-- scroll top btn -->
+  <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+  <!-- scroll back to top -->
+
+
+  <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+  <!-- jquery cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- typed.js cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+    integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- particle.js links -->
+  <script src="./assets/js/particles.min.js"></script>
+  <script src="./assets/js/app.js"></script>
+
+  <!-- vanilla tilt.js links -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+    integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- scroll reveal anim -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+  <script src="./assets/js/script.js"></script>
 
 </body>
+
 </html>

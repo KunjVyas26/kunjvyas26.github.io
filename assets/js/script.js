@@ -59,19 +59,19 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Mansi Patel";
-            $("#favicon").attr("href", "assets/images/favicon.png");
+            document.title = "Portfolio | Kunj Vyas";
+            $("#favicon").attr("href", "assets/images/hero.png");
         }
         else {
-            document.title = "Portfolio | Mansi Patel";
-            $("#favicon").attr("href", "assets/images/favicon.png");
+            document.title = "Portfolio | Kunj Vyas";
+            $("#favicon").attr("href", "assets/images/hero.png");
         }
     });
 
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Product Design", "UI/UX Design", "UX Research", "Front-End Developement"],
+    strings: ["Product Design", "UI/UX Design", "Front-End Web Development", "UX Research"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
