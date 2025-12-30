@@ -123,6 +123,44 @@ header .navbar ul li a:hover {
 }
 /* navbar ends */
 
+@media (min-width: 769px) {
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  header .navbar {
+    display: flex;
+    align-items: center;
+    flex: 1; /* takes space between logo and right tabs */
+  }
+
+  header .navbar .nav-center {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin: 0 auto; /* centers BETWEEN logo and nav-right */
+  }
+
+  .nav-center {
+    padding-left: 5rem; /* adjust value as needed */
+  }
+
+  header .navbar .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: auto;
+    padding-left: 2rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  header .navbar li {
+    margin-left: 0;
+  }
+}
+
+
 /* hamburger icon starts*/
 #menu {
   font-size: 3rem;
@@ -346,7 +384,10 @@ header .navbar ul li a:hover {
 
 /* about section starts */
 .about {
-  background: rgb(255, 255, 255);
+  background: linear-gradient(to bottom, #f8f8f8, #f2f2f2);
+}
+.about .heading span{
+  color: #2506ad;
 }
 .about .row {
   display: flex;
@@ -457,6 +498,521 @@ header .navbar ul li a:hover {
 }
 /* about media queries ends*/
 /* about section ends */
+
+/* UX Research section starts */
+.research {
+  /* background: #010124; */
+  background: linear-gradient(to bottom, #f8f8f8, #f2f2f2);
+}
+.research h2 {
+  color: #000000;
+  padding: 1rem;
+}
+.research .heading span {
+  color: #2506ad;
+}
+.research .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem;
+}
+.research .box-container .box {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff; /* Set background color for better readability */
+  height: auto; /* Set height to auto to accommodate varying text lengths */
+  padding: 2rem; /* Add padding for better text alignment */
+  margin-bottom: 2rem; /* Add margin between boxes */
+}
+
+/* Case Study Image */
+.research .box .image-box {
+  width: 100%;
+  height: 180px;
+  border-radius: 0.9rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  background-color: #eef0f4;
+}
+
+.research .box .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Subtle image interaction */
+.research .box:hover .image-box img {
+  transform: scale(1.04);
+}
+
+.research .box-container .box .content {
+  position: relative;
+  padding: 1.5rem; /* Add padding for better spacing */
+  background: none; /* Remove background effect */
+}
+
+
+.research .box-container .box .tag {
+  background: none; /* Remove background color for tag */
+  padding-left: 0; /* Align title to the left */
+}
+
+.research .desc {
+  margin: 1rem 0; /* Add margin for better spacing */
+  display: block; /* Ensure description is fully displayed */
+}
+
+.research .desc p {
+  font-size: 1.6rem; /* Adjust font size */
+  color: #000; /* Set text color */
+}
+
+.research .desc .btns {
+  display: block; /* Align buttons properly */
+  margin-top: 1rem; /* Add space between description and button */
+}
+
+.research .desc .btns .btn {
+  line-height: 1; /* Adjust button line height */
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #2506ad;
+}
+
+.research .desc .btns .btn:hover {
+  background: #1a047e; /* Button hover effect */
+}
+
+/* Remove hover effects for research content */
+.research .box-container .box:hover .content {
+  top: 0;
+  background: none; /* Ensure no background change on hover */
+}
+
+.research .box-container .box .tag h3 {
+  font-size: 2.5rem; /* Increase the font size of the research title */
+  font-weight: 700;  /* Make the font bold */
+  color: #000;       /* Ensure it's a clear, readable color */
+  margin-bottom: 1rem; /* Add some space below the title */
+}
+
+.research .desc p {
+  font-size: 1.6rem; /* Adjust the font size of the description text */
+  color: #333;       /* Ensure the description text is readable */
+}
+
+.research .viewall {
+  display: flex;
+  justify-content: center;
+}
+.research .viewall .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border: 2px solid #fff;
+  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
+  text-align: center;
+}
+.research .viewall .btn span {
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: "Nunito", sans-serif;
+}
+.research .viewall .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.research .viewall .btn:hover {
+  background: #fff;
+  color: #000;
+}
+.research .viewall .btn:hover i {
+  transform: translateX(5px);
+}
+/* UX Research section ends */
+
+/* Marketing section starts */
+.marketing {
+  /* background: #010124; */
+  background: linear-gradient(to bottom, #f8f8f8, #f2f2f2);
+}
+.marketing h2 {
+  color: #000000;
+  padding: 1rem;
+}
+.marketing .heading span {
+  color: #2506ad;
+}
+.marketing .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem;
+}
+.marketing .box-container .box {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff; /* Set background color for better readability */
+  height: auto; /* Set height to auto to accommodate varying text lengths */
+  padding: 2rem; /* Add padding for better text alignment */
+  margin-bottom: 2rem; /* Add margin between boxes */
+}
+
+.marketing .box-container .box .content {
+  position: relative;
+  padding: 1.5rem; /* Add padding for better spacing */
+  background: none; /* Remove background effect */
+}
+
+
+.marketing .box-container .box .tag {
+  background: none; /* Remove background color for tag */
+  padding-left: 0; /* Align title to the left */
+}
+
+.marketing .desc {
+  margin: 1rem 0; /* Add margin for better spacing */
+  display: block; /* Ensure description is fully displayed */
+}
+
+.marketing .desc p {
+  font-size: 1.6rem; /* Adjust font size */
+  color: #000; /* Set text color */
+}
+
+.marketing .desc .btns {
+  display: block; /* Align buttons properly */
+  margin-top: 1rem; /* Add space between description and button */
+}
+
+.marketing .desc .btns .btn {
+  line-height: 1; /* Adjust button line height */
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #2506ad;
+}
+
+.marketing .desc .btns .btn:hover {
+  background: #1a047e; /* Button hover effect */
+}
+
+/* Remove hover effects for marketing content */
+.marketing .box-container .box:hover .content {
+  top: 0;
+  background: none; /* Ensure no background change on hover */
+}
+
+.marketing .box-container .box .tag h3 {
+  font-size: 2.5rem; /* Increase the font size of the marketing title */
+  font-weight: 700;  /* Make the font bold */
+  color: #000;       /* Ensure it's a clear, readable color */
+  margin-bottom: 1rem; /* Add some space below the title */
+}
+
+.marketing .desc p {
+  font-size: 1.6rem; /* Adjust the font size of the description text */
+  color: #333;       /* Ensure the description text is readable */
+}
+
+.marketing .viewall {
+  display: flex;
+  justify-content: center;
+}
+.marketing .viewall .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border: 2px solid #fff;
+  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
+  text-align: center;
+}
+.marketing .viewall .btn span {
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: "Nunito", sans-serif;
+}
+.marketing .viewall .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.marketing .viewall .btn:hover {
+  background: #fff;
+  color: #000;
+}
+.marketing .viewall .btn:hover i {
+  transform: translateX(5px);
+}
+/* Marketing section ends */
+
+/* Ergonomics section starts */
+.ergonomics {
+  /* background: #010124; */
+  background: linear-gradient(to bottom, #f8f8f8, #f2f2f2);
+}
+.ergonomics h2 {
+  color: #000000;
+  padding: 1rem;
+}
+.ergonomics .heading span {
+  color: #2506ad;
+}
+.ergonomics .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem;
+}
+.ergonomics .box-container .box {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff; /* Set background color for better readability */
+  height: auto; /* Set height to auto to accommodate varying text lengths */
+  padding: 2rem; /* Add padding for better text alignment */
+  margin-bottom: 2rem; /* Add margin between boxes */
+}
+
+.ergonomics .box-container .box .content {
+  position: relative;
+  padding: 1.5rem; /* Add padding for better spacing */
+  background: none; /* Remove background effect */
+}
+
+
+.ergonomics .box-container .box .tag {
+  background: none; /* Remove background color for tag */
+  padding-left: 0; /* Align title to the left */
+}
+
+.ergonomics .desc {
+  margin: 1rem 0; /* Add margin for better spacing */
+  display: block; /* Ensure description is fully displayed */
+}
+
+.ergonomics .desc p {
+  font-size: 1.6rem; /* Adjust font size */
+  color: #000; /* Set text color */
+}
+
+.ergonomics .desc .btns {
+  display: block; /* Align buttons properly */
+  margin-top: 1rem; /* Add space between description and button */
+}
+
+.ergonomics .desc .btns .btn {
+  line-height: 1; /* Adjust button line height */
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #2506ad;
+}
+
+.ergonomics .desc .btns .btn:hover {
+  background: #1a047e; /* Button hover effect */
+}
+
+/* Remove hover effects for ergonomics content */
+.ergonomics .box-container .box:hover .content {
+  top: 0;
+  background: none; /* Ensure no background change on hover */
+}
+
+.ergonomics .box-container .box .tag h3 {
+  font-size: 2.5rem; /* Increase the font size of the ergonomics title */
+  font-weight: 700;  /* Make the font bold */
+  color: #000;       /* Ensure it's a clear, readable color */
+  margin-bottom: 1rem; /* Add some space below the title */
+}
+
+.ergonomics .desc p {
+  font-size: 1.6rem; /* Adjust the font size of the description text */
+  color: #333;       /* Ensure the description text is readable */
+}
+
+.ergonomics .viewall {
+  display: flex;
+  justify-content: center;
+}
+.ergonomics .viewall .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border: 2px solid #fff;
+  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
+  text-align: center;
+}
+.ergonomics .viewall .btn span {
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: "Nunito", sans-serif;
+}
+.ergonomics .viewall .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.ergonomics .viewall .btn:hover {
+  background: #fff;
+  color: #000;
+}
+.ergonomics .viewall .btn:hover i {
+  transform: translateX(5px);
+}
+/* ergonomics section ends */
+
+/* branding section starts */
+.branding {
+  /* background: #010124; */
+  background: linear-gradient(to bottom, #f8f8f8, #f2f2f2);
+}
+.branding h2 {
+  color: #000000;
+  padding: 1rem;
+}
+.branding .heading span {
+  color: #2506ad;
+}
+.branding .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem;
+}
+.branding .box-container .box {
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff; /* Set background color for better readability */
+  height: auto; /* Set height to auto to accommodate varying text lengths */
+  padding: 2rem; /* Add padding for better text alignment */
+  margin-bottom: 2rem; /* Add margin between boxes */
+}
+
+.branding .box-container .box .content {
+  position: relative;
+  padding: 1.5rem; /* Add padding for better spacing */
+  background: none; /* Remove background effect */
+}
+
+
+.branding .box-container .box .tag {
+  background: none; /* Remove background color for tag */
+  padding-left: 0; /* Align title to the left */
+}
+
+.branding .desc {
+  margin: 1rem 0; /* Add margin for better spacing */
+  display: block; /* Ensure description is fully displayed */
+}
+
+.branding .desc p {
+  font-size: 1.6rem; /* Adjust font size */
+  color: #000; /* Set text color */
+}
+
+.branding .desc .btns {
+  display: block; /* Align buttons properly */
+  margin-top: 1rem; /* Add space between description and button */
+}
+
+.branding .desc .btns .btn {
+  line-height: 1; /* Adjust button line height */
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #2506ad;
+}
+
+.branding .desc .btns .btn:hover {
+  background: #1a047e; /* Button hover effect */
+}
+
+/* Remove hover effects for branding content */
+.branding .box-container .box:hover .content {
+  top: 0;
+  background: none; /* Ensure no background change on hover */
+}
+
+.branding .box-container .box .tag h3 {
+  font-size: 2.5rem; /* Increase the font size of the branding title */
+  font-weight: 700;  /* Make the font bold */
+  color: #000;       /* Ensure it's a clear, readable color */
+  margin-bottom: 1rem; /* Add some space below the title */
+}
+
+.branding .desc p {
+  font-size: 1.6rem; /* Adjust the font size of the description text */
+  color: #333;       /* Ensure the description text is readable */
+}
+
+.branding .viewall {
+  display: flex;
+  justify-content: center;
+}
+.branding .viewall .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border: 2px solid #fff;
+  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
+  text-align: center;
+}
+.branding .viewall .btn span {
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: "Nunito", sans-serif;
+}
+.branding .viewall .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.branding .viewall .btn:hover {
+  background: #fff;
+  color: #000;
+}
+.branding .viewall .btn:hover i {
+  transform: translateX(5px);
+}
+/* Branding section ends */
 
 /* skills section starts */
 .skills {
@@ -639,25 +1195,25 @@ header .navbar ul li a:hover {
 /* education media queries ends*/
 /* education section ends */
 
-/* work section starts */
-.projects {
+/* Design section starts */
+.design {
   /* background: #010124; */
-  background: linear-gradient(to bottom, #000031, #00002c);
+  background: linear-gradient(to bottom, #f8f8f8, #f2f2f2);
 }
-.projects h2 {
-  color: #fff;
+.design h2 {
+  color: #000000;
   padding: 1rem;
 }
-.projects .heading span {
-  color: rgb(255, 230, 0);
+.design .heading span {
+  color: #2506ad;
 }
-.projects .box-container {
+.design .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   margin: 2rem;
 }
-.projects .box-container .box {
+.design .box-container .box {
   flex: 1 1 30rem;
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -669,34 +1225,34 @@ header .navbar ul li a:hover {
   margin-bottom: 2rem; /* Add margin between boxes */
 }
 
-.projects .box-container .box .content {
+.design .box-container .box .content {
   position: relative;
   padding: 1.5rem; /* Add padding for better spacing */
   background: none; /* Remove background effect */
 }
 
 
-.projects .box-container .box .tag {
+.design .box-container .box .tag {
   background: none; /* Remove background color for tag */
   padding-left: 0; /* Align title to the left */
 }
 
-.projects .desc {
+.design .desc {
   margin: 1rem 0; /* Add margin for better spacing */
   display: block; /* Ensure description is fully displayed */
 }
 
-.projects .desc p {
+.design .desc p {
   font-size: 1.6rem; /* Adjust font size */
   color: #000; /* Set text color */
 }
 
-.projects .desc .btns {
+.design .desc .btns {
   display: block; /* Align buttons properly */
   margin-top: 1rem; /* Add space between description and button */
 }
 
-.projects .desc .btns .btn {
+.design .desc .btns .btn {
   line-height: 1; /* Adjust button line height */
   padding: 1rem 2rem;
   border-radius: 0.5rem;
@@ -705,33 +1261,33 @@ header .navbar ul li a:hover {
   background: #2506ad;
 }
 
-.projects .desc .btns .btn:hover {
+.design .desc .btns .btn:hover {
   background: #1a047e; /* Button hover effect */
 }
 
-/* Remove hover effects for project content */
-.projects .box-container .box:hover .content {
+/* Remove hover effects for design content */
+.design .box-container .box:hover .content {
   top: 0;
   background: none; /* Ensure no background change on hover */
 }
 
-.projects .box-container .box .tag h3 {
-  font-size: 2.5rem; /* Increase the font size of the project title */
+.design .box-container .box .tag h3 {
+  font-size: 2.5rem; /* Increase the font size of the design title */
   font-weight: 700;  /* Make the font bold */
   color: #000;       /* Ensure it's a clear, readable color */
   margin-bottom: 1rem; /* Add some space below the title */
 }
 
-.projects .desc p {
+.design .desc p {
   font-size: 1.6rem; /* Adjust the font size of the description text */
   color: #333;       /* Ensure the description text is readable */
 }
 
-.projects .viewall {
+.design .viewall {
   display: flex;
   justify-content: center;
 }
-.projects .viewall .btn {
+.design .viewall .btn {
   position: relative;
   line-height: 0;
   padding: 1.6rem 3rem;
@@ -743,24 +1299,24 @@ header .navbar ul li a:hover {
   box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
   text-align: center;
 }
-.projects .viewall .btn span {
+.design .viewall .btn span {
   font-weight: 600;
   font-size: 1.7rem;
   font-family: "Nunito", sans-serif;
 }
-.projects .viewall .btn i {
+.design .viewall .btn i {
   margin-left: 0.3rem;
   font-size: 1.5rem;
   transition: 0.3s;
 }
-.projects .viewall .btn:hover {
+.design .viewall .btn:hover {
   background: #fff;
   color: #000;
 }
-.projects .viewall .btn:hover i {
+.design .viewall .btn:hover i {
   transform: translateX(5px);
 }
-/* work section ends */
+/* design section ends */
 
 /* experience section starts */
 .experience .timeline {
