@@ -133,6 +133,10 @@ h1 {
 	color: green;
 }
 
+.blue{
+	color: blue;
+}
+
 .purple {
 	color: purple;
 }
@@ -219,6 +223,46 @@ h6.work.center {
 	padding-top: 5px;
 	margin: 0px;
 }
+
+.responsibility-list {
+  padding-left: 18px;
+  margin-top: 10px;
+}
+
+.responsibility-list li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.responsibility-list ul {
+  margin-top: 6px;
+  padding-left: 18px;
+}
+
+.responsibility-list ul li {
+  list-style-type: disc;
+  margin-bottom: 4px;
+}
+
+.conversion-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px 16px;
+  margin-top: 6px;
+  padding-left: 18px; /* keeps bullet alignment */
+}
+
+.conversion-grid li {
+  list-style-type: disc;
+}
+
+.rounded-media {
+  border-radius: 16px;
+  overflow: hidden;
+  display: block;
+  margin-left: 58px;
+}
+
 
 .point {
 	text-align: left;
