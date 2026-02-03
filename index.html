@@ -19,6 +19,82 @@
   <title>Portfolio | Kunj Vyas</title>
 </head>
 
+<!-- Password Protected Modal -->
+<div id="passwordModal" class="password-modal">
+  <div class="password-modal-content">
+    <span class="close" onclick="closePasswordModal()">&times;</span>
+    <h3>🔒 Password Protected</h3>
+    <p>
+      This project contains confidential work.<br>
+      Please enter the password to continue.
+    </p>
+
+    <p class="password-helper">
+      Meanwhile, feel free to explore a <b>live eCommerce platform</b> which
+      <b>grew 3× in last 6 months</b> and outperformed competitors in the solar industry:
+    </p>
+
+    <ul class="password-links">
+      <li>
+        <a href="https://bigbattery.com/" target="_blank">Homepage</a>
+      </li>
+      <li>
+        <a href="https://bigbattery.com/products/12kw-14-3kwh-eg4-powerpro-system-ess/" target="_blank">
+          Consolidated Parent Product Page
+        </a>
+      </li>
+      <li>
+        <a href="https://bigbattery.com/ul-certified-grid-tied-systems/" target="_blank">
+          Landing Page – Grid-Tied Batteries
+        </a>
+      </li>
+      <li>
+        <a href="https://bigbattery.com/golf-carts/" target="_blank">
+          Landing Page – Golf Carts Batteries
+        </a>
+      </li>
+    </ul>
+
+    <input type="password" id="projectPassword" placeholder="Enter password" />
+
+    <button onclick="checkPassword()">Unlock</button>
+    <p id="passwordError">Incorrect password. Try again.</p>
+  </div>
+</div>
+
+<script>
+  const CORRECT_PASSWORD = "banksphere2020"; // 🔐 change this
+
+  function openPasswordModal() {
+    document.getElementById("passwordModal").style.display = "flex";
+    document.getElementById("passwordError").style.display = "none";
+    document.getElementById("projectPassword").value = "";
+  }
+
+  function closePasswordModal() {
+    document.getElementById("passwordModal").style.display = "none";
+  }
+
+  function checkPassword() {
+    const enteredPassword = document.getElementById("projectPassword").value;
+
+    if (enteredPassword === CORRECT_PASSWORD) {
+      window.open("spatialbanking.html", "_blank");
+      closePasswordModal();
+    } else {
+      document.getElementById("passwordError").style.display = "block";
+    }
+  }
+
+  // Close modal on outside click
+  window.addEventListener("click", function (e) {
+    const modal = document.getElementById("passwordModal");
+    if (e.target === modal) {
+      closePasswordModal();
+    }
+  });
+</script>
+
 <body oncontextmenu="return false">
 
   <!-- pre loader -->
@@ -86,6 +162,23 @@
       <div class="box">
         <div class="content">
           <div class="tag">
+            <h3>BigBattery, LLC: Product-Led Conversion & SEO</h3>
+          </div>
+          <div class="desc">
+            <p>Led end-to-end UX design strategy of an eCommerce platform, consolidating 180+ product pages into scalable product hubs, simplifying technical decision-making with visual systems, and redesigning checkout to reduce drop-offs and drive conversion growth.</p>
+            <br>
+            <div class="btns">
+              <a href="javascript:void(0)" class="btn" onclick="openPasswordModal()">
+                <i class="fas fa-lock"></i> VIEW
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="content">
+          <div class="tag">
             <h3>BankSphere: AI Powered Spatial Banking</h3>
           </div>
           <div class="desc">
@@ -137,40 +230,6 @@
       <div class="box">
         <div class="content">
           <div class="tag">
-            <h3>Afterglow: An Interior Design App</h3>
-          </div>
-          <div class="desc">
-            <p>Designed an accessibility-first interior design app, identifying 4 key barriers for blind and low-vision
-              users through interviews and usability testing, and delivering responsive, inclusive design solutions
-              across core shopping flows.</p>
-            <br>
-            <div class="btns">
-              <a href="afterglow.html" class="btn" target="_blank"><i class="fas fa-code"></i> VIEW</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="content">
-          <div class="tag">
-            <h3>MooddL: E-Learning Responsive WebApp</h3>
-          </div>
-          <div class="desc">
-            <p>Led UX design and research with instructors and students, identifying 4 key usability pain points.
-              Redesigned navigation and assignment flows through wireframes and prototypes, improving clarity,
-              accessibility, and cross-device usability.</p>
-            <br>
-            <div class="btns">
-              <a href="mooddl.html" class="btn" target="_blank"><i class="fas fa-code"></i> VIEW</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="box">
-        <div class="content">
-          <div class="tag">
             <h3>Craigslist Redesign</h3>
           </div>
           <div class="desc">
@@ -187,6 +246,40 @@
           </div>
         </div>
       </div>
+
+      <div class="box">
+        <div class="content">
+          <div class="tag">
+            <h3>Afterglow: An Interior Design App</h3>
+          </div>
+          <div class="desc">
+            <p>Designed an accessibility-first interior design app, identifying 4 key barriers for blind and low-vision
+              users through interviews and usability testing, and delivering responsive, inclusive design solutions
+              across core shopping flows.</p>
+            <br>
+            <div class="btns">
+              <a href="afterglow.html" class="btn" target="_blank"><i class="fas fa-code"></i> VIEW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="box">
+        <div class="content">
+          <div class="tag">
+            <h3>MooddL: E-Learning Responsive WebApp</h3>
+          </div>
+          <div class="desc">
+            <p>Led UX design and research with instructors and students, identifying 4 key usability pain points.
+              Redesigned navigation and assignment flows through wireframes and prototypes, improving clarity,
+              accessibility, and cross-device usability.</p>
+            <br>
+            <div class="btns">
+              <a href="mooddl.html" class="btn" target="_blank"><i class="fas fa-code"></i> VIEW</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
 
       <!-- Additional projects can be added in a similar format -->
 
