@@ -57,6 +57,14 @@
         border-radius: 4px;
         cursor: pointer;
     }
+
+    .embedded-project-view {
+        background: #fff;
+    }
+
+    .embedded-project-view .button-container {
+        padding-bottom: 24px;
+    }
 </style>
 
 
@@ -233,6 +241,12 @@
             backToTopBtn.style.display = "none";
         }
     };
+
+
+
+    if (window.self !== window.top) {
+        document.body.classList.add("embedded-project-view");
+    }
 </script>
 
 

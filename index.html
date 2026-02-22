@@ -63,6 +63,16 @@ You’re welcome to explore the live experience below.
   </div>
 </div>
 
+<!-- Project Preview Modal -->
+<div id="projectPreviewModal" class="project-preview-modal" aria-hidden="true">
+  <div class="project-preview-shell" role="dialog" aria-modal="true" aria-label="Project preview">
+    <button class="project-preview-close" type="button" aria-label="Close project preview" onclick="closeProjectPreview()">
+      &times;
+    </button>
+    <iframe id="projectPreviewFrame" title="Project preview content" loading="lazy"></iframe>
+  </div>
+</div>
+
 <script>
   const CORRECT_PASSWORD = "banksphere2020"; // 🔐 change this
 
@@ -87,11 +97,43 @@ You’re welcome to explore the live experience below.
     }
   }
 
+  function openProjectPreview(projectUrl) {
+    const previewModal = document.getElementById("projectPreviewModal");
+    const previewFrame = document.getElementById("projectPreviewFrame");
+
+    previewFrame.src = projectUrl;
+    previewModal.style.display = "flex";
+    previewModal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("project-preview-open");
+  }
+
+  function closeProjectPreview() {
+    const previewModal = document.getElementById("projectPreviewModal");
+    const previewFrame = document.getElementById("projectPreviewFrame");
+
+    previewModal.style.display = "none";
+    previewModal.setAttribute("aria-hidden", "true");
+    previewFrame.src = "";
+    document.body.classList.remove("project-preview-open");
+  }
+
   // Close modal on outside click
   window.addEventListener("click", function (e) {
     const modal = document.getElementById("passwordModal");
+    const projectModal = document.getElementById("projectPreviewModal");
+
     if (e.target === modal) {
       closePasswordModal();
+    }
+
+    if (e.target === projectModal) {
+      closeProjectPreview();
+    }
+  });
+
+  window.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      closeProjectPreview();
     }
   });
 </script>
@@ -190,7 +232,7 @@ You’re welcome to explore the live experience below.
               evaluations.</p>
             <br>
             <div class="btns">
-              <a href="spatialbanking.html" class="btn" target="_blank"><i class="fas fa-code"></i> VIEW</a>
+              <a href="javascript:void(0)" class="btn" onclick="openProjectPreview('spatialbanking.html')"><i class="fas fa-code"></i> VIEW</a>
             </div>
           </div>
         </div>
@@ -207,7 +249,7 @@ You’re welcome to explore the live experience below.
               to reduce ordering friction and improve clarity.</p>
             <br>
             <div class="btns">
-              <a href="petpuja.html" class="btn" target="_blank"><i class="fas fa-code"></i> VIEW</a>
+              <a href="javascript:void(0)" class="btn" onclick="openProjectPreview('petpuja.html')"><i class="fas fa-code"></i> VIEW</a>
             </div>
           </div>
         </div>
@@ -224,7 +266,7 @@ You’re welcome to explore the live experience below.
               by 2×, meeting WCAG standards.</p>
             <br>
             <div class="btns">
-              <a href="finlit.html" class="btn" target="_blank"><i class="fas fa-code"></i> VIEW</a>
+              <a href="javascript:void(0)" class="btn" onclick="openProjectPreview('finlit.html')"><i class="fas fa-code"></i> VIEW</a>
             </div>
           </div>
         </div>
@@ -261,7 +303,7 @@ You’re welcome to explore the live experience below.
               across core shopping flows.</p>
             <br>
             <div class="btns">
-              <a href="afterglow.html" class="btn" target="_blank"><i class="fas fa-code"></i> VIEW</a>
+              <a href="javascript:void(0)" class="btn" onclick="openProjectPreview('afterglow.html')"><i class="fas fa-code"></i> VIEW</a>
             </div>
           </div>
         </div>
